@@ -1,0 +1,91 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  /*Reset's every elements apperance*/
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42rem;
+  list-style: none outside none;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #f1f1f1;
+
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+p, strong{
+  font-family: "Dosis", serif;
+  color: #FCFCFC;
+  font-size: 1.2rem;
+  transition: font-size 1s;
+}
+h2{
+  font-family: "Oxanium", serif;
+  font-size: 2.8rem;
+  color: #FCFCFC;
+  transition: font-size 1s;
+  text-align: center;
+}
+h3{
+    font-family: "Oxanium", serif;
+    font-size: 1.75rem;
+    color: #ffffff;
+    transition: font-size 1s;
+}
+.btn{
+  width: 159px;
+  height: 45px;
+  border-radius: $light-border;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.btn-full{
+  background-color: $btn-blue;
+  color: $text;
+}
+.btn-full:hover{
+  transition: 100ms;
+  background-color:#5CAAF2;
+}
+.btn-empty{
+  position: relative;
+  color: $btn-blue;
+  border: 2px solid $btn-blue;
+}
+.btn-empty img{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
+.btn-empty:hover img{
+  transform: translate(-10%,-50%);
+  opacity: 100;
+  transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+}
+.btn-empty:hover span{
+  padding-left:1.2rem;
+  transition: padding-left 0.5s ease-out;
+}

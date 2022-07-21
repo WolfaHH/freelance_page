@@ -1,0 +1,155 @@
+.section3{
+  min-height: 140rem;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  background-color: $light;
+  position:relative;
+}
+.section3 .svg-section3{
+  width: 100%;
+  min-height: 140rem;
+  background:  url(/img/section3.svg) no-repeat 50% 20rem;
+  transition: background 0.5s ease-out;
+  position: relative;
+}
+.svg-section3 h2{
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 15rem;
+
+}
+.svg-section3 h3{
+  text-align: start;
+  padding-bottom: 1.8rem;
+  font-weight: bold;
+  line-height: 30px;
+
+}
+.svg-section3 p{
+  text-align: start;
+  color:#E4E3E3;
+
+}
+.svg-section3 ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.svg-section3 ul li{
+  width: 35rem;
+}
+.svg-section3 ul p, .svg-section3 ul h3{
+  position: relative;
+}
+.svg-section3 ul :nth-child(odd) p, .svg-section3 ul :nth-child(odd) h3{
+  right:57%;
+}
+.svg-section3 ul :nth-child(even) p, .svg-section3 ul :nth-child(even) h3{
+  left:57%;
+}
+.svg-section3 ul :first-child p, .svg-section3 ul :first-child h3{
+  top:-1rem;
+}
+.svg-section3 ul :nth-child(2) p, .svg-section3 ul :nth-child(2) h3{
+  top:17rem;
+}
+.svg-section3 ul :nth-child(3) p, .svg-section3 ul :nth-child(3) h3{
+  top:36rem;
+}
+.svg-section3 ul :last-child p, .svg-section3 ul :last-child h3{
+  top:53rem;
+}
+.svg-section3 span {
+  position: absolute;
+  bottom:4.5rem;
+  left:40%;
+  font-family: "Dosis", serif;
+  color: #fff;
+  font-size: 1.35rem;
+  transition: font-size 1s;
+}
+.svg-section3 span strong{
+  font-family: "Dosis", serif;
+  color: $btn-blue;
+  font-size: 2rem;
+  transition: font-size 1s;
+  padding-left: 1rem;
+  position: absolute;
+  bottom: 0.2rem;
+}
+
+
+// Tablette & Mobile ---->
+@media screen and (max-width: $breakpoint-lg){
+  .section3 {
+    min-height: 75rem;
+  }
+  .section3 .svg-section3{
+    min-height: 75rem;
+    background: none;
+
+  }
+  .svg-section3 h2{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .svg-section3 p{
+    padding-bottom: 2rem;
+  }
+  .svg-section3 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .svg-section3 ul li{
+    width: 21rem;
+  }
+  .svg-section3 ul p, .svg-section3 ul h3{
+    position: inherit;
+  }
+  .svg-section3 span {
+
+    bottom: 3.5rem;
+  }
+
+
+}
+
+// MOBILE ---->
+@media screen and (max-width: $breakpoint-sm){
+  .section3 {
+    min-height: 57rem;
+  }
+  .section3 .svg-section3{
+    min-height: 57rem;
+  }
+  .svg-section3 h2{
+    font-size: 1.7rem;
+    transition: font-size 1s;
+  }
+  .svg-section3 h3{
+    font-size: 0.8rem;
+    transition: font-size 1s;
+
+  }
+  .svg-section3 p{
+    font-size: 0.8rem;
+    transition: font-size 1s;
+  }
+  .svg-section3 span {
+    font-size: 1rem;
+    transition: font-size 1s;
+    left: 10%;
+  }
+  .svg-section3 span strong{
+    font-size: 1.5rem;
+    transition: font-size 1s;
+  }
+
+}
+
+

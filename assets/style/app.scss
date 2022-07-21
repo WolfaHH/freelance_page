@@ -1,0 +1,24 @@
+// import de toutes les librairies externes
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dosis&family=Oxanium&family=Poppins&display=swap');
+
+
+
+//import des variables spécifiques au projet
+@import "variables";
+@import "normalize";
+
+
+// import de tous les petites élements du site
+@import 'component/button';
+
+//import de tous les gros élément du site
+
+// import du page des construction finale des pages
+@import 'page/nav';
+@import 'page/section1';
+@import 'page/section2';
+@import 'page/section3';
+@import 'page/toolbox';
+@import 'page/section5';
+@import 'page/projects';
+@import 'page/section6';

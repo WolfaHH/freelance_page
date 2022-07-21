@@ -1,0 +1,91 @@
+.toolbox{
+  background-color: $dark;
+  min-height: 100vh;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.toolbox h2{
+  padding-top: 13rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.toolbox .container{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.toolbox h3{
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 4rem;
+}
+.toolbox .category ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 2.5rem;
+}
+.category ul li{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 110px;
+  height: 110px;
+  margin: auto 11px 10px 11px;
+  background: $light url(/img/tech_js.svg) no-repeat 50% 30%;
+  border-radius: 7px;
+  opacity: 85%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.category li span{
+  padding-bottom: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size:15px;
+  font-weight: bold;
+  color: #E4E3E3;
+}
+// SVG TOOL BOX (21 in total)
+//FRONTEND
+.toolbox .container :nth-child(1) li:nth-child(1) {
+  background: $light url(/img/tech_vue.svg) no-repeat 50% 30%;
+}
+.toolbox .container :nth-child(1) li:nth-child(2) {
+  background: $light url(/img/tech_js.svg) no-repeat 50% 30%;
+}
+.toolbox .container :nth-child(1) li:nth-child(3) {
+  background: $light url(/img/tech_laravel.svg) no-repeat 50% 30%;
+}
+.toolbox .container :nth-child(1) li:nth-child(4) {
+  background: $light url(/img/tech_sass.svg) no-repeat 50% 30%;
+}
+.toolbox .container :nth-child(1) li:nth-child(5) {
+  background: $light url(/img/tech_webpack.svg) no-repeat 50% 30%;
+}
+.toolbox .container :nth-child(1) li:nth-child(6) {
+   background: $light url(/img/tech_css.svg) no-repeat 50% 30%;
+ }
+.toolbox .container :nth-child(1) li:nth-child(7) {
+  background: $light url(/img/tech_html.svg) no-repeat 50% 30%;
+}
+
+
+
+
+// MOBILE ---->
+@media screen and (max-width: $breakpoint-sm){
+  .toolbox h2{
+    font-size: 1.7rem;
+    transition: font-size 1s;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+

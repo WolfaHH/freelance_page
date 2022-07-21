@@ -1,0 +1,112 @@
+.projects{
+  background-color: $dark;
+  min-height: 110vh;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.projects h2{
+  padding-top: 13rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.projects .svg-constellation{
+  width: 100%;
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projects .cards{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.projects .container{
+  width: 27rem;
+  height: 25rem;
+  display: grid;
+  grid-template-rows: repeat(2,minmax(0,1fr));
+  background-color: $light;
+  border-radius: 7px;
+  opacity: 89%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.container .img-container{
+  margin-top: 1.2em;
+  position: relative;
+  margin-bottom: -1.5em;
+}
+.projects .container .black-filter{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  margin:auto;
+  width: 90%;
+  height: 100%;
+  background-color: black;
+}
+.container img{
+  width: 100%;
+  height: 100%;
+  opacity: 90%;
+}
+.projects .content-container{
+  display: flex;
+  justify-content: space-between;
+  margin: auto 1em auto 1em;
+}
+.content-container .text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.projects .container h3{
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+
+}
+.projects .container p{
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+.projects .container .tags{
+  font-size: 0.8em;
+  display: flex;
+  padding-top: 1.5em;
+  margin-bottom: -2em;
+  margin-left: 1em;
+}
+.tags .item{
+  margin-right: 10px;
+  border: 2px solid #FF6663;
+  border-radius: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+}
+.tags .item span{
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  color: #FF6663;
+}
+.projects .container .btn-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 0.5em;
+  margin-bottom: -2.7em;
+  margin-left: 1em;
+}
+.btn-container button{
+  width: 9em;
+  height: 2.6em;
+  background-color: $dark;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}

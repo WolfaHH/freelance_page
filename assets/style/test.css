@@ -1,0 +1,185 @@
+html{
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    overflow-x: hidden;
+    height: 100%;
+
+}
+header {
+    box-shadow:0 2px 10px rgba(236,78,32,.05)
+}
+nav {
+    background-color:#535353;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .35s ease-out
+}
+main{
+    height: 100%;
+}
+
+p {
+    margin-bottom: 0;
+    font-family: serif;
+    color:#ffffff;
+    font-size: 25px;
+    line-height: 28px;
+
+}
+
+.button {
+    pointer-events: auto;
+    cursor: pointer;
+    background: #e7e7e7;
+    border: none;
+    padding: 1.5rem 3rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+.button::before,
+.button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-constellation {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #171820;
+    background-image: url("../../public/style/img/constellation.svg");
+    background-repeat: repeat;
+    font-size: xxx-large;
+}
+
+.jumbo-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+}
+.element.e1{
+    flex:1;
+}
+.element.e2{
+    flex:1.2;
+}
+h1{
+    margin-top: 10%;
+    font-family: "Segoe UI";
+    color:#ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 89px;
+    text-align: center;
+}
+.e1 p{
+    padding-bottom: 35px;
+}
+.e1 .button{
+
+    margin: auto auto 10px 50%;
+    width: 30%;
+    height: 18px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+button.button-contact{
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+
+    border-radius: 0.5rem;
+    overflow: hidden;
+    color: #ffffff;
+    background: #e7e7e7;
+}
+button.button-contact::before{
+    content: '';
+    background: #BC3084;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+button.button-contact:hover::before {
+    transform: translate3d(100%,0,0);
+}
+button.button-contact span{
+    position: relative;
+    vertical-align: center;
+}
+button.button-contact:hover{
+    color:black;
+}
+.button-pallene {
+    color:#BC3084;
+    background:transparent;
+    border-radius: 0.5rem;
+    border: 2px solid #BC3084;
+    box-shadow: inset 0 0 0 0px #BC3084;
+    transition: border-radius 0.3s, box-shadow 0.3s, color 0.3s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button-pallene:hover {
+    transition-delay: 0s, 0s, 0.2s;
+}
+.element.e1 h1{
+    margin: -15% auto auto 26%;
+}
+.element.e1 p{
+    text-align: start;
+    margin: 5% auto auto 34%;
+
+}
+.element.e2 p{
+    text-align: start;
+    margin: 5% auto auto 18%;
+
+}
+.element.e2 h1 {
+    text-align: start;
+    margin: 3% auto auto 30%;
+}
+
+.element .img{
+    margin-top:10%;
+    margin-left: 25%;
+    background: url('img/moi.jpg');
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    opacity: 90%;
+    display: block;
+    border-top-left-radius: 125px;
+    -webkit-border-top-left-radius: 125px;
+    border-bottom-right-radius: 125px;
+    -webkit-border-bottom-right-radius: 125px;
+    border: 8px solid #606274;
+    box-sizing: border-box;
+
+}
+.element .img:hover {
+    opacity: 25%;
+}
+
+
+
+
+

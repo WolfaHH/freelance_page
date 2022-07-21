@@ -1,0 +1,99 @@
+.cool-btn {
+  position: relative;
+  padding-top:9px ;
+  color: lightgray;
+  overflow: hidden;
+  border: 2px solid lightgray;
+  transition: all 0.1s linear;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid transparent;
+    color: $btn-blue;
+    span {
+      position: absolute;
+      display: block;
+
+      &:nth-child(1) {
+        filter: gradient($btn-blue);
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 1.3px;
+        background: linear-gradient(90deg, transparent, $btn-blue);
+        animation: animate1 1s linear infinite;
+      }
+      @keyframes animate1 {
+        0% {
+          left: -100%;
+        }
+        50%,
+        100% {
+          left: 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        filter: gradient($btn-blue);
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 70%;
+        background: linear-gradient(180deg, transparent, $btn-blue);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
+      }
+
+      @keyframes animate2 {
+        0% {
+          top: -100%;
+        }
+        50%,
+        100% {
+          top: 100%;
+        }
+      }
+      &:nth-child(3) {
+        filter: gradient($btn-blue);
+        bottom: 0;
+        right: 0;
+        width: 70%;
+
+        background: linear-gradient(270deg, transparent, $btn-blue);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s;
+      }
+      @keyframes animate3 {
+        0% {
+          right: -100%;
+          height: 2px;
+        }
+        50%,
+        100% {
+          height: 2px;
+          right: 100%;
+        }
+      }
+
+      &:nth-child(4) {
+        filter: gradient($btn-blue);
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 70%;
+        background: linear-gradient(360deg, transparent, $btn-blue);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s;
+      }
+      @keyframes animate4 {
+        0% {
+          bottom: -100%;
+        }
+        50%,
+        100% {
+          bottom: 100%;
+        }
+      }
+    }
+  }
+}

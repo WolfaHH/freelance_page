@@ -1,0 +1,45 @@
+.after-jumbo{
+  background-color: $dark;
+  min-height: 105vh;
+  transition: min-height 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.after-jumbo h2{
+  margin-top: 7rem;
+  margin-bottom: 1.5rem;
+}
+.after-jumbo ul{
+  margin-top: 3rem;
+  li{
+    margin-bottom: 1.7rem;
+  }
+}
+.after-jumbo .btn{
+  margin-top: 2.5rem;
+}
+
+// MOBILE ---->
+@media screen and (max-width: $breakpoint-md){
+  .after-jumbo{
+    min-height: 65vh;
+    transition: min-height 1s ease-out;
+  }
+  .after-jumbo h2{
+    margin-top: 0;
+    font-size: 1.7rem;
+    transition: font-size 1s ease-out;
+    text-align: center;
+    line-height: 35px;
+  }
+  .after-jumbo p, .after-jumbo strong{
+    font-size: 0.8rem;
+    transition: font-size 1s ease-out;
+  }
+
+}
+
+
